@@ -28,6 +28,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    color: inherit; /* Hereda el color del elemento padre */
 }
 
 .toggle {
