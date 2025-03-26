@@ -42,6 +42,7 @@ body {
 .toggle.active {
     background: white;
     border-bottom: 3px solid cyan;
+   color: inherit; /* Hereda el color del elemento padre */
 }
 
 form {
