@@ -26,10 +26,12 @@ body {
     
 .toggle-buttons {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    color: inherit; /* Hereda el color del elemento padre */
+justify-content: space-between;
+margin-bottom: 20px;
+    background: white;
+    border-bottom: 3px solid cyan;
 }
+
 
 .toggle {
     flex: 1;
