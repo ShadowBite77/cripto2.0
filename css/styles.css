@@ -1,0 +1,245 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+    padding-bottom: 60px; /* Espacio para el footer */
+}
+
+/* Header */
+.main-header {
+    background-color: #000000;
+    padding: 10px;
+    position: relative;
+}
+
+.header-logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+/* Navegación principal */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nav-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+    margin-left: 80px; /* Compensa el logo */
+}
+
+.nav-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    transition: transform 0.3s ease;
+}
+
+.nav-button:hover {
+    transform: scale(1.05);
+}
+
+.nav-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.nav-label {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Carrusel */
+.carousel-container {
+    width: 90%;
+    max-width: 1000px;
+    height: 280px;
+    overflow: hidden;
+    border: 3px solid #070707;
+    margin: 20px auto;
+    border-radius: 15px;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 2s ease;
+    width: 400%;
+    height: 100%;
+}
+
+.carousel img {
+    width: 25%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Footer */
+.main-footer {
+    background-color: #333;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.footer-links li {
+    margin: 0 15px;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.copyright {
+    font-size: 14px;
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 768px) {
+    .header-logo {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .nav-buttons-container {
+        margin-left: 60px;
+        gap: 10px;
+    }
+    
+    .nav-button {
+        width: 80px;
+    }
+    
+    .nav-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .nav-label {
+        font-size: 12px;
+    }
+    
+    .carousel-container {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-logo {
+        width: 50px;
+        height: 50px;
+        top: 5px;
+        left: 5px;
+    }
+    
+    .nav-buttons-container {
+        margin-left: 50px;
+        gap: 5px;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .nav-button {
+        width: 70px;
+        margin: 5px 0;
+    }
+    
+    .nav-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .nav-label {
+        font-size: 11px;
+    }
+    
+    .carousel-container {
+        height: 150px;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+    }
+    
+    .footer-links li {
+        margin: 5px 0;
+    }
+}
+/* Estilos de la pagina inversion  */
+.tarjeta {
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.imagen-tarjeta {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-right: 15px;
+}
+
+.info h3 {
+    margin: 0 0 10px 0;
+}
+
+.info p {
+    margin: 4px 0;
+}
+
+.verde {
+    color: #0077ff9d;
+}
+
+.btn-invertir {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-invertir:hover {
+    background-color: #0056b3;
+}
+
